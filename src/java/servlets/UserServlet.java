@@ -88,10 +88,10 @@ public class UserServlet extends HttpServlet {
         try {
             switch (action) {
                 case "add":
-                    us.insert(email, active, firstname, lastname, password, role);
+                    us.insert(email, active, firstname, lastname, password);
                     break;
                 case "update":
-                    us.update(email, active, firstname, lastname, password, role);
+                    us.update(email, active, firstname, lastname, password,role);
                     break;
                 default:
                     break;

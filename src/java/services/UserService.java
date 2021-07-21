@@ -18,8 +18,8 @@ public class UserService {
         return user;
     }
     
-    public void insert(String email, boolean activity, String first_name, String last_name, String password, Role role) throws Exception{
-        User user = new User(email, activity, first_name, last_name, password, role);
+    public void insert(String email, boolean activity, String first_name, String last_name, String password) throws Exception{
+        User user = new User(email, activity, first_name, last_name, password);
         UserDB userDB = new UserDB();
         userDB.insert(user);
     }
